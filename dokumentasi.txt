@@ -1,0 +1,5 @@
+1. konsultasi online : input permasalahan dan menunggu diagnosa rumah sakit vv
+2. beli obat/tidak
+3. pembayaran : transfer - menu transaksi - detail transaksi
+4. halaman utama
+5. profile lengkap

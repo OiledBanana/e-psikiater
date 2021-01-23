@@ -1,0 +1,9 @@
+SELECT bk.id_booking, bk.id_dokter, d.nama, bk.id_rs, a.nama 
+FROM booking_dokter bk 
+JOIN dokter d 
+ON bk.id_dokter = d.id 
+JOIN booking b 
+ON bk.id_booking = b.id 
+JOIN anggota a 
+ON b.id_anggota = a.id 
+WHERE username = 'rzlco'
