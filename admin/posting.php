@@ -34,6 +34,10 @@ include 'includes/navbar.php';
                 <label>Links</label>
                 <input type="text" name="links" class="form-control" placeholder="Enter Links">
             </div>
+            <div class="form-group">
+            <label>Upload Image</label>
+            <input type="file" name="image" class="form-control-file">
+        </div>
 
         </div>
         <div class="modal-footer">

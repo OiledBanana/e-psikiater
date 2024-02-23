@@ -88,8 +88,8 @@ if (isset($_SESSION['status']) && $_SESSION['status'] != '') {
             <th>Username </th>
             <th>Email </th>
             <th>Password</th>
-            <th>Ubah </th>
-            <th>Hapus </th>
+            <th>Update</th>
+            <th>Delete</th>
           </tr>
         </thead>
         <tbody>
@@ -107,7 +107,7 @@ while ($data = mysqli_fetch_array($query)) {
             <td>
               <form action="regisedit.php" method="POST">
                 <input type="hidden" name="edit_id" value="<?php echo $data['id']; ?>">
-                <button type="submit" name="edit_btn" class="btn btn-success">Ubah</button>
+                <button type="submit" name="edit_btn" class="btn btn-success">Update</button>
               </form>
             </td>
             <td>

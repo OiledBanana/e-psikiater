@@ -6,7 +6,7 @@
   <div class="sidebar-brand-icon rotate-n-15">
     <i class="fas fa-leaf"></i>
   </div>
-  <div class="sidebar-brand-text mx-3">e-psikiater</div>
+  <div class="sidebar-brand-text mx-3">E-PSYCH</div>
 </a>
 
 <!-- Divider -->

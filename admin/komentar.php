@@ -30,7 +30,7 @@ include 'includes/navbar.php';
             <th>Nama </th>
             <th>Isi </th>
             <th>Tanggal </th>
-            <th>Hapus </th>
+            <th>Delete </th>
           </tr>
         </thead>
         <tbody>
@@ -40,18 +40,18 @@ $query = mysqli_query($connection, " SELECT * FROM komentar ");
 $no = 1;
 while ($data = mysqli_fetch_array($query)) {
     ?>
-          <tr>
-            <td><?php echo $no; ?></td>
-            <td><?php echo $data["nama"]; ?></td>
-            <td><?php echo $data["isi"]; ?></td>
-            <td><?php echo $data["tanggal"]; ?></td>
-            <td>
-            <form action="fungsi/komentarcode.php" method="post">
-            <input type="hidden" name="delete_id" value="<?php echo $data['id']; ?>">
-            <button type="submit" name="delete_btn" class="btn btn-danger">Hapus</button>
-            </form>
-            </td>
-          </tr>
+         <tr>
+    <td><?php echo $no; ?></td>
+    <td><?php echo $data["nama"]; ?></td>
+    <td><?php echo $data["isi"]; ?></td>
+    <td><?php echo $data["tanggal"]; ?></td>
+    <td>
+        <form action="fungsi/komentarcode.php" method="post">
+            <input type="hidden" name="delete_id" value="<?php echo $data['id_komentar']; ?>">
+            <button type="submit" name="delete_btn" class="btn btn-danger">Delete</button>
+        </form>
+    </td>
+</tr>
           <?php
 $no++;
 }

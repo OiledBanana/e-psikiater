@@ -5,7 +5,7 @@ if (isset($_POST['delete_btn'])) {
 
     $id = $_POST['delete_id'];
 
-    $query = "DELETE FROM komentar WHERE id='$id' ";
+    $query = "DELETE FROM komentar WHERE id_komentar='$id_komentar' ";
     $query_run = mysqli_query($connection, $query);
 
     if ($query_run) {

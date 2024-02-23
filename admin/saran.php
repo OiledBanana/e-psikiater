@@ -30,7 +30,7 @@ include 'includes/navbar.php';
             <th>Nama </th>
             <th>Email </th>
             <th>Pesan </th>
-            <th>Hapus </th>
+            <th>Delete </th>
           </tr>
         </thead>
         <tbody>
@@ -48,7 +48,7 @@ while ($data = mysqli_fetch_array($query)) {
             <td>
             <form action="fungsi/sarancode.php" method="post">
             <input type="hidden" name="delete_id" value="<?php echo $data['id']; ?>">
-            <button type="submit" name="delete_btn" class="btn btn-danger">Hapus</button>
+            <button type="submit" name="delete_btn" class="btn btn-danger">Delete</button>
             </form>
             </td>
           </tr>
